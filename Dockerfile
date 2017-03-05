@@ -1,3 +1,3 @@
 FROM alpine
 
-RUN apk add --no-cache vim
+RUN apk add --no-cache vim zsh
