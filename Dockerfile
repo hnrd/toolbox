@@ -7,3 +7,4 @@ RUN apk add --no-cache \
   vim \
   zsh
 ADD zshrc /root/.zshrc
+CMD zsh
