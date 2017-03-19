@@ -1,1 +1,11 @@
-export PS1="%d$ "
+autoload -Uz compinit promptinit
+
+# enable autocompletion
+compinit
+# fancy PS1
+promptinit
+prompt adam2
+
+# key bindings
+bindkey -v
+
