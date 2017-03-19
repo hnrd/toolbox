@@ -5,6 +5,7 @@ RUN apk add --no-cache \
   curl \
   git \
   openssh \
+  socat \
   vim \
   zsh
 ENV LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8
