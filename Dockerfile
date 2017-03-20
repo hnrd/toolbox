@@ -16,7 +16,9 @@ RUN git clone https://git.zx2c4.com/password-store && \
   cd password-store && \
   make install && cd .. && \
   rm -rf password-store
-ENV LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 HOME=/root
+RUN addgroup user -g 1000 && \
+  adduser user -G user -u 1000 -D
+ENV LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 HOME=/home/user
 WORKDIR $HOME
-ADD zshrc /root/.zshrc
+ADD zshrc $HOME/.zshrc
 CMD zsh
