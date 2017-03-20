@@ -21,4 +21,5 @@ RUN addgroup user -g 1000 && \
 ENV LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 HOME=/home/user
 WORKDIR $HOME
 ADD zshrc $HOME/.zshrc
+USER user
 CMD zsh
