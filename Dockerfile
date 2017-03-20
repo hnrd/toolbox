@@ -4,6 +4,7 @@ RUN apk add --no-cache \
   coreutils \
   curl \
   git \
+  gnupg \
   openssh \
   socat \
   vim \
