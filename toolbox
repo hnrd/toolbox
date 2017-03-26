@@ -1,1 +1,1 @@
-docker run --rm -ti -v ${HOME}/.gnupg:/home/user/.gnupg -v ${HOME}/.ssh:/home/user/.ssh -v ${HOME}/.password-store:/home/user/.password-store hnrd/toolbox
+docker run --rm -ti -v ${HOME}/.gnupg:/home/user/.gnupg -v ${HOME}/.ssh:/home/user/.ssh -v ${HOME}/.password-store:/home/user/.password-store hnrd/toolbox su -l user
