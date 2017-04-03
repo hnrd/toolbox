@@ -6,6 +6,4 @@ compinit
 promptinit
 prompt adam2
 
-# key bindings
-bindkey -v
-
+alias ls="ls --color"
