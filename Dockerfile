@@ -1,6 +1,7 @@
 FROM alpine
 
 RUN apk add --no-cache \
+  ansible \
   bash \
   coreutils \
   curl \
